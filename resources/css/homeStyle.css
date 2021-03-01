@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+*{
+
+   font-family: 'Nunito Sans', sans-serif;
+   box-sizing: border-box;
+}
+body{
+   height: 2000px;
+   width: 100%;
+   background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0)), url("https://kartinkinaden.ru/uploads/posts/2020-07/1593659723_32-p-foni-s-kosmosom-52.jpg");
+   background-size: cover;
+   background-position: center center;
+   
+}
+/*Navigation-----------------------*/
+.nav{
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   text-transform: uppercase;
+   height: 3%;
+   margin: 10px;
+   align-items: center;
+   font-size: 20px; 
+   color: white;
+   letter-spacing: 2px;
+   cursor: pointer;
+
+  }
+
+  .Main{
+   display: flex;
+   width: 100%;
+   flex-direction: row;
+   color: WHITE;
+   margin-bottom: 10%;
+}
+.Main_Text{
+   width: 40%;
+   margin:100px 100px;
+   margin-bottom: 50px;
+  }
+.Intro{
+   font-size: 30px;
+   text-transform: uppercase;
+   margin: 20px 0;
+}
+.catalog{
+   width: 50%;
+   height: 80%;
+   margin-top: 10%;
+   align-items: center;
+   
+}
+.catalog_img{
+   width: 70%;
+   align-items: center;
+   box-shadow: 10px 10px 10px black;
+}
