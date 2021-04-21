@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Post extends Migration
+class CreateUploadFilesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,11 @@ class Post extends Migration
      */
     public function up()
     {
-        Schema::create('post', function (Blueprint $table) {
-            $table->id();
-            $table->string('title');
-            $table->string('body');
+
+        Schema::create('upload_files', function (Blueprint $table) {
+            $table->string('name');
+            $table->string('surname');
+            $table->string('email');
             $table->timestamps();
         });
     }
@@ -28,6 +29,7 @@ class Post extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('upload_files');
     }
+
 }
